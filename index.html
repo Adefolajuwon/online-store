@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/output.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+<link rel="stylesheet" href="css/main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<nav class="h-16 md:relative md:w-3/4 mx-auto p-6 md:h-28 bg-white">
+  <div class="flex  justify-between">
+    <h1 class="flex text-black font-extrabold text-2xl" >sneakers</h1>
+    <div class="hidden md:flex space-x-12 ">
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#" >Women</a>
+      <a href="#" >About</a>
+      <a href="#" >Contact</a>
+    </div>
+   <!--<div class="flex justify-around"><svg width="22" heigh3t="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>--> 
+      <ul>
+        <li class="submenu">
+          <div class="flex justify-around"><svg width="22" heigh3t="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+                <div class="shopping-cart">
+                        <table id="cart-content" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                </div>
+        </li>
+    </ul>
+    </div>
+ <!--<img src="./images/image-avatar.png" class="w-full h-16">--> 
+  </div>
+</nav>
+<div class="courses-list md:flex  md:ml-64 md:mt-10">
+  <div class="add-to-cart md:w-1/2">
+    <img src="./images/image-product-1.jpg" class="h-2/3 md:rounded-md">
+    <div class=" hidden md:flex h-20 mt-6">
+      <img src="./images/image-product-1-thumbnail.jpg"class="pr-7 rounded-md" >
+      <img src="./images/image-product-2-thumbnail.jpg"class="pr-7 rounded-md">
+      <img src="./images/image-product-3-thumbnail.jpg"class="pr-7 rounded-md">
+      <img src="./images/image-product-4-thumbnail.jpg"class="pr-7 rounded-md">
+    </div>
+  </div>
+  <div class="ml-2 mt-6 md:w-1/2 md:ml-0 md:mt-0">
+    <h3 class="text-red-400 font-semibold">SNEAKER COMPANY</h3>
+    <h1 class="text font-bold text-4xl mt-3">  Fall Limited Edition<br> Sneakers
+    </h1>
+    <p class="text-gray-500 mt-6">  These low-profile sneakers are your perfect casual wear<br> companion. Featuring a 
+      durable rubber outer sole, they’ll<br> withstand everything the weather can offer.</p>
+      <div class="flex mt-6 md:mt-0">
+        <h2 class="md:mt-4 font-bold text-4xl">$125</h1>
+        <h2 class=" h-fit mt-2 ml-4 md:mt-5 md:ml-8 bg-red-100 text-red-400 text-center font-bold w-10">50%</h1>
+        <h2 class="md:hidden font-bold  mt-2 text-gray-400 pl-28">$250.00</h1>
+      </div>
+      <h1 class="price hidden md:block font-bold text-gray-400">$250.00</h1>
+      <div class="md:flex md:ml-0 ml-6">
+        <div class="flex justify-between w-72 mb-2 md:w-36 h-11 bg-gray-100 rounded-md md:mb-0 md:mt-10">
+        <button class="btn text-red-500 pt-2 font-bold  text-2xl">-</button>
+        <h2 class="counter text-red-500 pt-2 font-bold text-2xl">0</h1>
+        <h2 class="btn2 text-red-500 pt-2 font-bold text-2xl">+</h1>
+        </div>
+            <a class="add-to-cart font-bold pt-2 flex justify-center bg-red-500 w-72 md:w-48 h-11 rounded-md md:mt-10 md:ml-8 text-center text-white">Add To Cart </a>
+      </div>
+  </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
